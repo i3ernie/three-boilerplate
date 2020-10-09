@@ -4,19 +4,16 @@ import Viewport from "../../../node_modules/three-viewport/dist/viewport.es.js";
 import WoodBox from "./WoodBox.js";
 import Grassground from "./Grassground.es.js";
 
+
 var VP;
 
 
-init();
+(function () {
 
-function init() {
-
-   
     
     VP = new Viewport();
 
-    VP.init();
-    VP.start();
+    VP.init().start();
 
     VP.camera.position.z = 500;
 
@@ -54,6 +51,5 @@ function init() {
     mesh1.add( box );
 
     VP.scene.add( mesh1 );
-}
 
-
+})();

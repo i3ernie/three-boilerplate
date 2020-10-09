@@ -12,8 +12,7 @@ var VP, DEH;
 
     VP = (new Viewport());
 
-    VP.init();
-    VP.start();
+    VP.init().start();
 
     DEH = new Domevent( VP.camera, VP.renderer.domElement );
 
