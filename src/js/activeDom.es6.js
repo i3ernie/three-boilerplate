@@ -7,9 +7,7 @@ import Grassground from "./Grassground.es.js";
 var VP;
 
 
-init();
-
-function init() {
+(function () {
 
     var panel = new GUI( { width: 310 } );
     
@@ -64,10 +62,4 @@ function init() {
 
     VP.scene.add( ground );
     activeWorld.add( mesh1 );
-}
-
-
-function logEvent( ev ){
-    console.log( "eventListener: " + ev.type + " for " + ev.target.name + " <--on-- ", ev.intersect.object.name );
-}
-
+})();
