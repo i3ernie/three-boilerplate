@@ -12,16 +12,17 @@
     "Viewport"
   ],
   "dependencies": {
-    "three": "^0.118",
+    "three": "^0.125",
     "dat.gui": "latest",
     "lodash": "latest",
     "three-viewport": "git+https://github.com/i3ernie/three-viewport.git",
     "three-domevents": "git+https://github.com:i3ernie/three-domevents.git"
   },
   "devDependencies": {
-    "jshint": "^2.11.1",
+    "async" : "latest",
+    "jshint": "latest",
     "customevent-polyfill": "git://github.com/d4tocchini/customevent-polyfill.git",
-    "gulp": "^4.0.2",
+    "gulp": "latest",
     "gulp-load-plugins": "latest",
     "gulp-sourcemaps": "latest",
     "gulp-uglify": "latest"
