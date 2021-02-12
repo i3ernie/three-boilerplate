@@ -11,11 +11,10 @@ const transforms = {
 };
 
 
-
 const build_AMD = function( done ){
    
     rollup.rollup({
-        input : 'src/demo.es6.js',
+        input : 'src/demo.module.js',
         external: ['../node_modules/three/build/three.module.js', '../../node_modules/three/build/three.module.js', 'three'],
         
         plugins:[
@@ -51,13 +50,10 @@ const build_AMD = function( done ){
 };
 
 
-const build_amd = function( done ){
+module.exports = function( done ){
     async.series([
         build_AMD
-    
     ], function( err, data ){
         done();
     });
 };
-
-module.exports = build_amd;

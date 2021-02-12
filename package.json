@@ -13,21 +13,26 @@
   ],
   "dependencies": {
     "three": "^0.125",
-    "dat.gui": "latest",
-    "lodash": "latest",
-    "three-viewport": "git+https://github.com/i3ernie/three-viewport.git",
-    "three-domevents": "git+https://github.com:i3ernie/three-domevents.git"
+    "dat.gui": "latest"
   },
   "devDependencies": {
-    "async" : "latest",
+    "async": "latest",
     "jshint": "latest",
     "customevent-polyfill": "git://github.com/d4tocchini/customevent-polyfill.git",
     "gulp": "latest",
     "gulp-load-plugins": "latest",
+    "gulp-rollup": "latest",
     "gulp-sourcemaps": "latest",
-    "gulp-uglify": "latest"
+    "gulp-uglify": "latest",
+    "lodash": "latest",
+    "rollup": "latest",
+    "rollup-plugin-buble": "latest",
+    "rollup-plugin-node-resolve": "latest",
+    "stats": "latest",
+    "three-viewport": "git+https://github.com/i3ernie/three-viewport.git"
   },
   "directories": {
+    "build": "build",
     "example": "examples",
     "dist": "dist",
     "test": "test"

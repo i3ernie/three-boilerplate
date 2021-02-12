@@ -10,10 +10,10 @@ const transforms = {
     letConst : false
 };
 
-const build_ES = function( done ){
+const build_module = function( done ){
    
     rollup.rollup({
-        input : 'src/demo.es6.js',
+        input : 'src/demo.module.js',
         external: ['../node_modules/three/build/three.module.js', '../../node_modules/three/build/three.module.js'],
         
         plugins:[
@@ -50,7 +50,7 @@ const build_ES = function( done ){
 
 module.exports = function( done ){
     async.series([
-        build_ES,
+        build_module,
     ], function( err, data ){
         if ( err ) console.error( err );
         done();
